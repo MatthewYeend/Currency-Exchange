@@ -1,0 +1,35 @@
+{
+    "name": "mattyeend/currency-exchange",
+    "description": "A Laravel package for currency exchange rates",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "Laravel",
+        "Prevent",
+        "Destructive",
+        "Commands",
+        "Prevent-Destructive-Commands",
+        "Package"
+    ],
+    "authors": [
+        {
+            "name": "Matt Yeend",
+            "email": "mail@mattyeend.co.uk"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MattYeend\\CurrencyExchange\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "MattYeend\\CurrencyExchange\\CurrencyExchangeServiceProvider"
+            ]
+        }
+    }
+}
