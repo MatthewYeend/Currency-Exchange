@@ -10,7 +10,7 @@ class CurrencyExchangeTest extends TestCase
     public function test_can_fetch_rates()
     {
         $service = app(CurrencyExchangeService::class);
-        $rates = $services->getRates('GBP');
+        $rates = $service->getRates('GBP');
 
         $this->assertIsArray($rates);
         $this->assertArrayHasKey('EUR', $rates);
