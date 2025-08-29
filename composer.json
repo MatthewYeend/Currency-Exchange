@@ -5,11 +5,12 @@
     "license": "MIT",
     "keywords": [
         "Laravel",
-        "Prevent",
-        "Destructive",
-        "Commands",
-        "Prevent-Destructive-Commands",
-        "Package"
+        "Currency",
+        "exchange",
+        "Currency-Exchange",
+        "Package", 
+        "Laravel-Package",
+        "Exchange-Rates"
     ],
     "authors": [
         {
