@@ -3,6 +3,7 @@
 namespace MattYeend\CurrencyExchange;
 
 use Illuminate\Support\ServiceProvider;
+use MattYeend\CurrencyExchange\Services\CurrencyExchangeService;
 
 class CurrencyExchangeServiceProvider extends ServiceProvider
 {
@@ -10,8 +11,8 @@ class CurrencyExchangeServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(__DIR__ . '/../config/currencyexchange.php', 'currencyexchange');
 
-        $this->app->singleton(CurrencyExchangeService::class, function($app){
-            return new CurrencyExchangeService(config(currencyexchange.api_key));
+        $this->app->singleton(CurrencyExchangeService::class, function ($app) {
+            return new CurrencyExchangeService(config('currencyexchange.api_key'));
         });
     }
 

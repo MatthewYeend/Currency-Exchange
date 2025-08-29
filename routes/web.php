@@ -1,6 +1,6 @@
 <?php
 
-use Illuminate\Support\Facades\Routes;
+use Illuminate\Support\Facades\Route;
 use MattYeend\CurrencyExchange\Http\Controllers\CurrencyExchangeController;
 
 Route::get('/currency-exchange', [CurrencyExchangeController::class, 'index'])->name('currencyexchange.index');
